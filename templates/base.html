@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Hello Azure - Python Quickstart{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+  <main>
+    {% block main %}{% endblock %}
+  </main>
+
+  <div class="container mt-auto">
+    <footer class="py-3 my-4 fixed-bottom">
+      {% block footer %}
+      <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
+      {% endblock %}
+    </footer>
+  </div>
+</body>
+</html>
